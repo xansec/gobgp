@@ -1,0 +1,11 @@
+project: gobgp 
+target: gobgp 
+uid: 0
+gid: 0
+
+cmds:
+  - cmd: /gobgpd -f /gobgpd-nopeer.conf
+    network:
+      url: 'tcp://localhost:6060'
+      timeout: 2
+      client: false
